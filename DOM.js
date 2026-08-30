@@ -165,18 +165,97 @@
 // },
 // true
 // )
-let count=document.querySelector("span")
-  let input=document.querySelector("input")
+// let count=document.querySelector("span")
+//   let input=document.querySelector("input")
 
-  input.addEventListener("input",function(){
+//   input.addEventListener("input",function(){
 
-    let left=20-input.value.length
-     count.textContent=left
-    if(left<0){
-      count.style.color="red"
+//     let left=20-input.value.length
+//      count.textContent=left
+//     if(left<0){
+//       count.style.color="red"
+//     }
+//     else{
+//       count.style.color="black"
+//     }
+//   })
+
+
+
+// let email=document.querySelector("#email")
+// let form=document.querySelector("#form")
+
+// const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+// const passwordRegex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@#$%^&*!]).{8,}$/;
+
+
+// form.addEventListener("submit", function(dets){
+//   dets.preventDefault()
+
+//   if()
+
+
+
+
+// })
+
+// let email=document.querySelector("#email");
+// let password=document.querySelector("#password");
+// let form=document.querySelector("#form");
+
+// form.addEventListener("submit",function(dets){
+//   dets.preventDefault();
+
+// document.querySelector("#emailMessage").textContent=""
+// document.querySelector("#passwordMessage").textContent=""
+
+//   const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+//   const passwordRegex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@#$%^&*!]).{8,}$/;
+
+//   let emailans=emailRegex.test(email.value)
+//   let passwordans=passwordRegex.test(password.value)
+
+//   let isvalid=true;
+
+//   if(!emailans){
+//     document.querySelector("#emailMessage").textContent="Email is incorrect"
+//     document.querySelector("#emailMessage").style.display="initial"
+//     isvalid=false;
+//   }
+
+//    if(!passwordans){
+//     document.querySelector("#passwordMessage").textContent="password is incorrect"
+//     document.querySelector("#passwordMessage").style.display="initial"
+//     isvalid=false
+//   }
+
+//   if(isvalid){
+//     document.querySelector("#result").textContent="All Correct"
+//     // document.querySelector("#result").style.display="initial"
+    
+//   }
+
+
+// })
+
+
+
+// setTimeout(function(){
+//   console.log("hello")
+// },3000)
+
+// setInterval(function(){
+//   console.log("hello")
+// },3000)
+
+let count=10;
+
+let time=setInterval(function(){
+    if(count>=0){
+      console.log(count);
+      count--;
+    }else{
+clearInterval(time);
     }
-    else{
-      count.style.color="black"
-    }
-  })
 
+},1000);

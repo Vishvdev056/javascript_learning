@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Progress</title>
+
+    <link rel="stylesheet" href="progresstime.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>File Download</h1>
+
+        <div class="download-box">
+
+            <div class="file-info">
+                <div class="file-icon">📄</div>
+
+                <div>
+                    <h2>JavaScript_Project.zip</h2>
+                    <p>50 MB</p>
+                </div>
+            </div>
+
+            <div class="progress-section">
+
+                <div class="progress-info">
+                    <span id="status">Ready to download</span>
+                    <span id="percentage">0%</span>
+                </div>
+
+                <div class="progress-bar">
+                    <div id="progress"></div>
+                </div>
+
+            </div>
+
+            <div class="time-info">
+                <span>Remaining time:</span>
+                <span id="time">--</span>
+            </div>
+
+            <button id="downloadBtn">
+                Start Download
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="progressstime.js"></script>
+
+</body>
+</html>
