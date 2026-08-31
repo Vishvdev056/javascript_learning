@@ -89,4 +89,6 @@ inp.addEventListener("input", function () {
   );
 
   showUsers(filteredUsers);
+
 });
+
