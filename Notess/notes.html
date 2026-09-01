@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Notes App</title>
+
+    <link rel="stylesheet" href="notes.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>My Notes 📝</h1>
+
+        <!-- Search -->
+        <input
+            type="text"
+            id="search"
+            placeholder="Search notes..."
+        >
+
+        <!-- Add Note Button -->
+        <button id="addBtn">+ Add Note</button>
+
+
+        <!-- Note Form -->
+        <div id="noteForm">
+
+            <input
+                type="text"
+                id="title"
+                placeholder="Enter note title"
+            >
+
+            <textarea
+                id="content"
+                placeholder="Write your note..."
+            ></textarea>
+
+            <div class="buttons">
+
+                <button id="saveBtn">
+                    Save Note
+                </button>
+
+                <button id="cancelBtn">
+                    Cancel
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Notes will be displayed here -->
+        <div id="notesContainer"></div>
+
+        <p id="notFound">
+            No notes found.
+        </p>
+
+    </div>
+
+
+    <script src="notes.js"></script>
+
+</body>
+</html>
