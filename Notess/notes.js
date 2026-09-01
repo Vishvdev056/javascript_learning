@@ -1,6 +1,6 @@
-// ===============================
+
 // SELECT ELEMENTS
-// ===============================
+
 
 let btn = document.querySelector("#addBtn");
 
@@ -23,17 +23,17 @@ let notFound =
     document.querySelector("#notFound");
 
 
-// ===============================
+
 // GET NOTES FROM LOCAL STORAGE
-// ===============================
+
 
 let notes =
     JSON.parse(localStorage.getItem("notes")) || [];
 
 
-// ===============================
+
 // ADD NOTE BUTTON
-// ===============================
+
 
 btn.addEventListener("click", function () {
 
@@ -42,9 +42,9 @@ btn.addEventListener("click", function () {
 });
 
 
-// ===============================
+
 // CANCEL BUTTON
-// ===============================
+
 
 cancel.addEventListener("click", function () {
 
@@ -57,9 +57,9 @@ cancel.addEventListener("click", function () {
 });
 
 
-// ===============================
+
 // SAVE NOTE
-// ===============================
+
 
 save.addEventListener("click", function () {
 
@@ -130,9 +130,9 @@ save.addEventListener("click", function () {
 });
 
 
-// ===============================
+
 // SHOW NOTES
-// ===============================
+
 
 function showNotes(notesArray) {
 
@@ -185,9 +185,9 @@ function showNotes(notesArray) {
 }
 
 
-// ===============================
+
 // DELETE NOTE
-// ===============================
+
 
 notesContainer.addEventListener(
     "click",
@@ -222,9 +222,9 @@ notesContainer.addEventListener(
 );
 
 
-// ===============================
+
 // SEARCH NOTES
-// ===============================
+
 
 search.addEventListener("input", function () {
 
@@ -255,8 +255,8 @@ search.addEventListener("input", function () {
 });
 
 
-// ===============================
+
 // SHOW SAVED NOTES ON PAGE LOAD
-// ===============================
+
 
 showNotes(notes);
