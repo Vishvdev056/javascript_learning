@@ -445,17 +445,17 @@
 
 // foreach 
 
-// let arr=[10,20,30,40,50]
+let arr=[10,20,30,40,50]
 
-// arr.forEach(function(val){
-  //   console.log(val+5) 
-  // })
+arr.forEach(function(val){
+    console.log(val+5) 
+  })
   
-  // let newarr= arr.map(function(val){
-    //    if (val>20)return val;
-    // })
+  let newarr= arr.map(function(val){
+       if (val>20)return val;
+    })
     
-    // filter 
+//     filter 
 // let arr=[10,20,30,40,50]
 
 //  let newarr= arr.filter(function(val){

@@ -182,3 +182,5 @@
 
 // LAZY LOADING 
 
+// lazy loading image with intersection observer
+
